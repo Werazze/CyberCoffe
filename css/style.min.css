@@ -326,7 +326,9 @@ body.lock {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
+    background: rgba(0, 0, 0, 0.5);
+
 }
 
 #wrapper:after {
@@ -339,12 +341,11 @@ body.lock {
 
 #wrapper:before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0px;
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
  }
 
@@ -1609,7 +1610,12 @@ textarea.form_input {
     -webkit-flex-grow: 1;
     -moz-box-flex: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1
+    flex-grow: 1;
+    margin-bottom: 0px !important;
+}
+
+.sidebar_top nav {
+   margin-bottom: 0px !important;
 }
 
 .sidebar_logo {
@@ -1657,7 +1663,7 @@ textarea.form_input {
 }
 
 .sidebar_contacts {
-    margin: 20px 0 30px 0;
+    margin: 0px 0 30px 0;
     text-align: center
 }
 
@@ -4187,4 +4193,10 @@ body {
     padding-top: 6vh;
     padding-bottom: 3vh;
      overflow-y: auto;
+}
+
+@media all and (max-width: 800px) {
+    a {
+        font-size: 16px;
+    }
 }
