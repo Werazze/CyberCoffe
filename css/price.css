@@ -1,0 +1,267 @@
+.callback-input {
+    margin-bottom: 11px;
+  }
+  .callback-input input, input.callback-quantity-input {
+    font-family: 'inky';
+    font-size: 3vh;
+    color: #fff;
+    display: block;
+    height: 6vh;
+    padding: 0 20px;
+    outline: none;
+    background: transparent;
+    line-height: normal;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+  .callback-input input {
+    width: 100%;
+    border: 2px solid #fff;
+  }
+  .callback-input input::placeholder {
+    font-family: 'inky';
+    font-size: 3.5vh;
+    color: #787380;
+  }
+  .callback-input input.surnamecb {
+    display: none;
+  }
+  .callback-label {
+    font-family: 'Conv_SGK100';
+    font-size: 34px;
+    font-style: italic;
+  }
+  .callback-quantity {
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  input.callback-quantity-input {
+    width: calc(100% - 166px);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 0;
+  }
+  input.callback-quantity-input::placeholder {
+    font-family: 'inky';
+    font-size: 7vh;
+    color: #fff;
+  }
+  input.callback-quantity-minus, input.callback-quantity-plus {
+    width: 83px;
+    height: 6vh;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'inky';
+    cursor: pointer;
+    transition: .3s;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+  input.callback-quantity-minus {
+    background: #05ccff;
+  }
+  input.callback-quantity-plus {
+    background: #f10c79;
+  }
+  input.callback-quantity-minus:hover, input.callback-quantity-plus:hover {
+    opacity: .8;
+  }
+  .callback-when {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .callback-when {
+    position: relative;
+    z-index: 1;
+  }
+  .callback-when:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: calc(100% - 83px);
+    height: calc(100% - 4px);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 0;
+    left: 0;
+  }
+  .callback-when:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 83px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(../images/mm/arrow.png) 50% no-repeat #05ccff;
+  }
+  .callback-when select {
+    display: block;
+    position: relative;
+    z-index: 3;
+    font-family: 'inky';
+    font-size: 3vh;
+    color: #fff;
+    width: 100%;
+    height: 6vh;
+    padding: 0 103px 0 20px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    line-height: normal;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+  .callback-when select option {
+    color: #000;
+    font-family: 'VCR';
+    font-size: 20px;
+  }
+  .callback-checkbox {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .callback-checkbox label {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 37px;
+    font-family: 'Conv_SGK100';
+    font-size: 26px;
+    font-style: italic;
+    line-height: 80%;
+    user-select: none;
+    color: #fff;
+  }
+  .callback-checkbox label a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .callback-checkbox label a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .callback-checkbox input[type=checkbox] {
+      display: none;
+  }
+  .callback-checkbox label:before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top: 3px;
+      background-color: transparent;
+    background-image: url(../images/all/check.png);
+    background-position: 0 -24px;
+  }
+  .callback-checkbox input[type=checkbox]:checked + label:before {
+      background-position: 0 0;
+  }
+  .callback-msg {
+    color: #fff;
+    line-height: 120%;
+    font-size: 20px;
+    font-family: 'VCR';
+  }
+  .callback-msg h3 {
+    color: #ee4b2c;
+    font-size: 30px;
+    font-family: 'VCR';
+    margin: 0 0 20px 0;
+    padding: 20px 0 0 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .callback-msg a {
+    color: #fff;
+  }
+  /*.callback-title {
+    font-family: 'Conv_SGK100';
+    font-size: 37px;
+    margin-bottom: 15px;
+    line-height: 76%;
+  }*/
+  .callback-btn {
+    margin-left: 8px;
+  }
+  .callback-btn.disabled {
+    opacity: .6;
+  }
+  .callback-btn.btn-parallelogram.disabled:hover:before {
+    background: #00ffff;
+  }
+  .callback-btn input:disabled {
+    cursor: default;
+    opacity: .6;
+  }
+  
+  .is-not-bot {
+    width: calc(100% - 15px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .is-not-bot-checkbox {
+    width: 117px;
+    padding-top: 15px;
+  }
+  .is-not-bot-checkbox input[type=checkbox] {
+      display: none;
+  }
+  .is-not-bot-checkbox label {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 20px;
+    line-height: 76%;
+      font-size: 28px;
+    user-select: none;
+    font-weight: 500;
+    text-align: right;
+  }
+  .is-not-bot-checkbox label:before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      border: 2px solid #fff;
+  }
+  .is-not-bot-checkbox input[type=checkbox]:checked + label:before {
+      background: #f10c79;
+  }
+  .callback-btn.btn-parallelogram.disabled:before, .callback-btn.btn-parallelogram.disabled:hover:before {
+    background: #00ffff;
+  }
+
+  .callback-container {
+    width: calc(100%);
+    max-width: 700px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    padding-top: 6vh;
+    padding-bottom: 3vh;
+    height: 120vh;
+    overflow-y: hidden;
+  }
+
+   

@@ -1,0 +1,14 @@
+.content-block {
+    padding: 45px;
+    background: #ffffffd1;
+    color: #333;
+    font-size: 150%;
+    text-align: justify;
+}
+.info_blocks .item p.h2 {
+    margin-bottom: 0;
+    font-size: 32px;
+}
+.section_text__block_b {
+    font-size: 130%;
+}
