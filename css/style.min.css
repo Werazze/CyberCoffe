@@ -346,12 +346,10 @@ body.lock {
     left: 0px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    height: 210%;
-
  }
 
 #fullpage {
-    z-index: 2
+    z-index: 2;
 }
 
 body.mainpage {
@@ -368,8 +366,8 @@ body.mainpage #wrapper {
     float: left;
     width: 100%;
     max-width: 2000px;
-    z-index: 3
-}
+    z-index: 3;
+ }
 
 .center {
     text-align: center
@@ -4166,3 +4164,27 @@ body {
     margin-bottom: 25px;
     flex-grow: 1;
   }
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.price-akciya {
+    display: flex;
+    justify-content: center;
+}
+
+.table-container td {
+    padding: 10px 10px;
+}
+.form-container {
+    width: calc(100% - 70px);
+    max-width: 380px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    padding-top: 6vh;
+    padding-bottom: 3vh;
+     overflow-y: auto;
+}

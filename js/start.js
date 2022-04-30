@@ -16,7 +16,9 @@ jQuery(document).ready(function($){
       $('.coast-tabs-nav li:eq('+tabindex+')').addClass('active-nav').siblings().removeClass('active-nav');
     });
   });
- 
+  
+   
+  
   $('.mmb-open span').on('click',function(){
 		$('.mm').addClass('is-shown');
 		$('body').addClass('overflow-hidden');
@@ -62,19 +64,26 @@ jQuery(document).ready(function($){
     $('.fofmcallback input[name=callbackbookingtype]').val('Play Station');
 	});
   
+  
+  
+  $('.phmask').mask("+7 999 999-99-99");
+  $('.phmask').on('focus click', function() {
+    $(this)[0].setSelectionRange(3, 3);
+  });
+  
   $('.close_modalcallback').click(function (){
     $('.popupcallback').removeClass('is-shown');
     $('body').removeClass('overflow-hidden');
   });
   
-  $(document).on('click', '.fofmcallback input:checkbox', function() {
+  $(document).on('change', '.fofmcallback input:checkbox', function() {
     if($(this).is(':checked')){
       $('.fofmcallback input[type=submit]').removeAttr('disabled');
       $('.callback-btn.btn-parallelogram').removeClass('disabled');
     } else {
       $('.fofmcallback input[type=submit]').attr('disabled','disabled');
       $('.callback-btn.btn-parallelogram').addClass('disabled');
-    } 
+    }
   });
   
 });

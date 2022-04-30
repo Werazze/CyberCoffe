@@ -14,7 +14,7 @@
 </head>
 
 <body class="intro">
-  
+
   <div class="sidebar_mobile">
     <div class="sidebar_mobile__logo move_to" data-moveto="1"></div>
     <div class="sidebar_mobile__btn">
@@ -67,116 +67,125 @@
         <div class="row section_full intro">
           <div class="container">
             <div class="row intro_inner section_full">
-
               <div class="price">
-                <div class="row_text">
-                  <div class="row">
-                    <h1 class="h1">Прайс-лист</h1>
-                    <p class="section_text__block">Прайс PC:
-                      <p>Первый час - 100 ₽., далее 50 ₽./час</p>
-                      <p>Ночь (22:00 - 9:00) - 500₽</p>
-                      <p>День (10:00 - 21:00) - 500₽</p>
-                      <p class="section_text__block">Прайс PS:
+                <h1 class="h1">Прайс-лист</h1>
+                <div class="table-container">
+                  <table>
+                    <tr>
+                      <td>
+                        <p class="section_text__block">Прайс PC:</p>
+                        <p>Первый час - 100 ₽., далее 50 ₽./час</p>
+                        <p>Ночь (22:00 - 9:00) - 500₽</p>
+                        <p>День (10:00 - 21:00) - 500₽</p>
+                      </td>
+                      <td>
+                        <p class="section_text__block">Прайс PS:</p>
                         <p>Sony playstation 4 Pro в формате 4К</p>
                         <p>1 час - 500₽</p>
                         <p>В наличии имеется VR</p>
                         <p>Кол-во человек: неограниченно</p>
-                        <h2>Акция</h2>
-                        <p>Оставь отзыв в 2ГИС и получи час бесплатно</p>
-                  </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="callback-container">
-                  <h1>Забронинировать</h1>
-                  <form class="fofmcallback" method="POST" action="php/record.php">
-                    <div class="callback-input">
-                      <input type="text" maxlength="16" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$" required=""
-                        placeholder="Имя игрока" name="txtnamecallback" autocomplete="off">
-                      <input class="surnamecb" type="text" maxlength="16" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"
-                        placeholder="Фамилия игрока" name="txtsurnamecallback" autocomplete="off">
-                    </div>
-                    <div class="callback-input">
-                      <input class="phmask" type="tel" required="" placeholder="Номер телефона" name="txtphonecallback"
-                        autocomplete="off">
-                    </div>
-
-                    <div class="callback-when">
-                      <select name="callbackbookingtype">
-                        <option disabled selected>Выберите зал</option>
-                        <option value="COMFORT">COMFORT</option>
-                        <option value="LUX">LUX</option>
-                        <option value="BOOTCAMP">BOOTCAMP</option>
-                        <option value="PlayStation">PlayStation</option>
-                      </select>
-                    </div>
-
-                    <div class="callback-label">
-                      Количество игроков:
-                    </div>
-                    <div class="callback-quantity">
-                      <input class="callback-quantity-input" type="text" name="callbackpeoples" value="1"
-                        autocomplete="off" autocapitalize="off">
-                      <input class="callback-quantity-minus" type="button"
-                        onclick="var qty_peop = document.getElementsByName('callbackpeoples'); for ( keyVar in qty_peop) { if( !isNaN( qty_peop[keyVar].value ) &amp;&amp; qty_peop[keyVar].value > 1) qty_peop[keyVar].value--;}return false;"
-                        value="-">
-                      <input class="callback-quantity-plus" type="button"
-                        onclick="var qty_peop = document.getElementsByName('callbackpeoples'); for ( keyVar in qty_peop) {if( !isNaN( qty_peop[keyVar].value )) qty_peop[keyVar].value++; }return false;"
-                        value="+">
-                    </div>
-                    <div class="callback-label">
-                      Количество часов:
-                    </div>
-                    <div class="callback-quantity">
-                      <input class="callback-quantity-input" type="text" name="callbacktime" value="1"
-                        autocomplete="off" autocapitalize="off">
-                      <input class="callback-quantity-minus" type="button"
-                        onclick="let qty_time = document.getElementsByName('callbacktime'); for ( keyVar in qty_time) { if( !isNaN( qty_time[keyVar].value ) &amp;&amp; qty_time[keyVar].value > 1) qty_time[keyVar].value--;}return false;"
-                        value="-">
-                      <input class="callback-quantity-plus" type="button"
-                        onclick="let qty_time = document.getElementsByName('callbacktime'); for ( keyVar in qty_time) {if( !isNaN( qty_time[keyVar].value )) qty_time[keyVar].value++; }return false;"
-                        value="+">
-                    </div>
-                    <div class="callback-label">
-                      Время визита:
-                    </div>
-                    <div class="callback-when">
-                      <select name="callbackwhen">
-                        <option value="09:00 - 13:00">09:00 - 13:00</option>
-                        <option value="13:00 - 18:00">13:00 - 18:00</option>
-                        <option value="18:00 - 23:00">18:00 - 23:00</option>
-                        <option value="23:00 - 09:00">23:00 - 09:00</option>
-                      </select>
-                    </div>
-                    <div class="" style="padding:15px 0;font-size:22px;line-height:76%;">
-                      Нажимая "Забронить", я даю согласие на обработку моих персональных данных.
-                      <br><br>
-                      <a style="text-decoration: underline;" href="/privacy/" target="_blank">Политика
-                        конфиденциальности</a>
-                      <br><br>
-                      <a style="text-decoration: underline;" href="/data-processing/" target="_blank">Обработка
-                        данных</a>
-                    </div   >
-                    <div class="is-not-bot">
-                      <div class="is-not-bot-checkbox">
-                        <input id="imNotBot" type="checkbox" value="false">
-                        <label for="imNotBot">Я не бот!</label>
-                      </div>
-                      <div class="callback-btn btn-parallelogram disabled">
-                        <input type="submit" class="button" value="Забронить" name="btnsendcallback" disabled>
-                      </div>
-                    </div>
-                  </form>
+              </div>
+              <div class="price-akciya">
+                <div>
+                  <h2>Акция</h2>
+                  <p>Оставь отзыв в 2ГИС и получи час бесплатно</p>
                 </div>
               </div>
             </div>
           </div>
+
+        </div>
+
+        <div class="form-container">
+          <iframe name="iframe1" style="position: absolute; left: -9999px;"></iframe>
+          <form class="fofmcallback" method="POST" action="telegram.php" target="iframe1">
+            <div class="callback-input">
+              <input type="text" maxlength="16" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$" required="" placeholder="Имя игрока"
+                name="player_name" autocomplete="off">
+              <input class="surnamecb" type="text" maxlength="16" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"
+                placeholder="Фамилия игрока" name="txtsurnamecallback" autocomplete="off">
+            </div>
+            <div class="callback-input">
+              <input class="phmask" type="tel" required="" placeholder="Номер телефона" name="phone_number"
+                autocomplete="off">
+            </div>
+
+            <div class="callback-when">
+              <select name="callbackbookingtype">
+                <option disabled selected>Выберите зал</option>
+                <option value="COMFORT">COMFORT</option>
+                <option value="LUX">LUX</option>
+                <option value="BOOTCAMP">BOOTCAMP</option>
+                <option value="PlayStation">PlayStation</option>
+              </select>
+            </div>
+
+            <div class="callback-label">
+              Количество игроков:
+            </div>
+            <div class="callback-quantity">
+              <input class="callback-quantity-input" type="text" name="callbackpeoples" value="1" autocomplete="off"
+                autocapitalize="off">
+              <input class="callback-quantity-minus" type="button"
+                onclick="let qty_peop = document.getElementsByName('callbackpeoples'); for ( keyVar in qty_peop) { if( !isNaN( qty_peop[keyVar].value ) &amp;&amp; qty_peop[keyVar].value > 1) qty_peop[keyVar].value--;}return false;"
+                value="-">
+              <input class="callback-quantity-plus" type="button"
+                onclick="let qty_peop = document.getElementsByName('callbackpeoples'); for ( keyVar in qty_peop) {if( !isNaN( qty_peop[keyVar].value )) qty_peop[keyVar].value++; }return false;"
+                value="+">
+            </div>
+            <div class="callback-label">
+              Количество часов:
+            </div>
+            <div class="callback-quantity">
+              <input class="callback-quantity-input" type="text" name="callbacktime" value="1" autocomplete="off"
+                autocapitalize="off">
+              <input class="callback-quantity-minus" type="button"
+                onclick="let qty_time = document.getElementsByName('callbacktime'); for ( keyVar in qty_time) { if( !isNaN( qty_time[keyVar].value ) &amp;&amp; qty_time[keyVar].value > 1) qty_time[keyVar].value--;}return false;"
+                value="-">
+              <input class="callback-quantity-plus" type="button"
+                onclick="let qty_time = document.getElementsByName('callbacktime'); for ( keyVar in qty_time) {if( !isNaN( qty_time[keyVar].value )) qty_time[keyVar].value++; }return false;"
+                value="+">
+            </div>
+            <div class="callback-label">
+              Время визита:
+            </div>
+            <div class="callback-when">
+              <select name="callbackwhen">
+                <option value="09:00 - 13:00">09:00 - 13:00</option>
+                <option value="13:00 - 18:00">13:00 - 18:00</option>
+                <option value="18:00 - 23:00">18:00 - 23:00</option>
+                <option value="23:00 - 09:00">23:00 - 09:00</option>
+              </select>
+            </div>
+            <div class="" style="padding:15px 0;font-size:22px;line-height:76%;">
+              Нажимая "Забронить", я даю согласие на обработку моих персональных данных.
+              <br><br>
+              <a style="text-decoration: underline;" href="/privacy/" target="_blank">Политика конфиденциальности</a>
+              <br><br>
+              <a style="text-decoration: underline;" href="/data-processing/" target="_blank">Обработка данных</a>
+            </div>
+            <div class="is-not-bot">
+              <div class="is-not-bot-checkbox">
+                <input id="id9346756" type="checkbox" value="id9346756">
+                <label for="id9346756">Я не бот!</label>
+              </div>
+              <div class="callback-btn btn-parallelogram disabled">
+                <input type="submit" class="button" value="Забронить" name="btnsendcallback" disabled>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-
-
-      <script src="js/main.js"></script>
-      <script src="js/default.js"></script>
-      <script src="js/start.js"></script>
-      <script src="js/record.js"></script>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/default.js"></script>
+  <script src="js/start.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 
 </body>
 
