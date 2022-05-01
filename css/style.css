@@ -35,7 +35,6 @@ li {
     background-origin: content-box;
     -webkit-background-size: cover;
     background-size: cover;
-    overflow: hidden;
 }
 
 .intro_mobile {
@@ -229,10 +228,8 @@ body, html {
     align-items: center;
 }
 .logo img{
-    height: 100px;
-    width: 130px;
-    margin-right: 10pt;
-    margin-bottom: 40pt;
+    height: 130px;
+    width: 150px;
     position: inherit;
 }
 a {

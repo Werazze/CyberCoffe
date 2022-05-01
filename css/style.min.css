@@ -347,7 +347,6 @@ body.lock {
     right: 0px;
     left: 0px;
     z-index: 1;
-    overflow: hidden;
  }
 
 #fullpage {
@@ -1615,6 +1614,7 @@ textarea.form_input {
     flex-grow: 1;
     margin-left: 5px;
     margin-bottom: 0px !important;
+    justify-content: center;
 }
 
 .sidebar_top nav {
