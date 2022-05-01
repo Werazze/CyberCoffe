@@ -7,7 +7,6 @@
 body {
     margin: 0;
     font-family: 'Lora-Regular', sans-serif;
-
     box-sizing: border-box;
     margin: 25px;
     background: #261e3d;
@@ -69,7 +68,7 @@ li {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 280px;
+    width: 220px;
 
     background: #140355ce;
     padding: 30px;
@@ -232,8 +231,8 @@ body, html {
 .logo img{
     height: 100px;
     width: 130px;
-    margin-right: 15pt;
-    margin-bottom: 15pt;
+    margin-right: 10pt;
+    margin-bottom: 40pt;
     position: inherit;
 }
 a {
