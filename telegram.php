@@ -7,8 +7,8 @@
 
   $people_count = $_POST['callbackpeoples'];
 
-  $token = "5381960052:AAHBE9ZJOzJimDAXsXLpZE-VX9veIHk55Dg";
-  $chat_id = "453661544";
+  $token = "5381960052:AAHBE9ZJOzJimDAXsXLpZE-VX9veIHk55Dg"; 
+  $chat_id = "453661544"; //суда свой chat_id
   $arr = array(
     'Имя игрока: ' => $name,
     'Телефон: ' => $phone,
