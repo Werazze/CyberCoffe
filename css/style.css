@@ -16,31 +16,29 @@ body {
 
 }
 
-
 element.style {
     overflow: visible;
     height: initial;
 }
+
 li {
     list-style: none;
 }
 
-.intro{
+.intro {
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    
     background-position: center center; 
     background-attachment: fixed;
     background-origin: content-box;
     -webkit-background-size: cover;
     background-size: cover;
-   
+    overflow: hidden;
 }
+
 .intro_mobile {
     position: fixed;
     top: 0;

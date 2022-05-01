@@ -347,6 +347,7 @@ body.lock {
     right: 0px;
     left: 0px;
     z-index: 1;
+    overflow: hidden;
  }
 
 #fullpage {
@@ -3682,7 +3683,8 @@ html.fp-enabled,
     }
 
     .container {
-        padding: 0 40px
+        padding: 0 40px;
+        overflow: hidden;
     }
 
     .popup_container {
