@@ -556,7 +556,7 @@ body.mainpage #wrapper {
 }
 .catalog-nav__item:last-of-type .catalog-nav__btn {
     border-right: 0;
-}
+} 
 
 .catalog-navbar-items {
     display: flex; 
