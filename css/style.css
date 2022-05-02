@@ -338,10 +338,10 @@ a.phone {
     -ms-flex-positive: 1;
     flex-grow: 1
 }
+
 .section_footer {
     margin-top: 60px
 }
-
 
 .gallery_slider{
     line-height: 0;
@@ -352,6 +352,7 @@ a.phone {
     justify-content: center;
     align-items: center;
 }
+
 .gallery_slider img{
     width: 120px;
     height: 120px;
@@ -359,6 +360,7 @@ a.phone {
     transition: filter 0.5s ease-in;
     transform: scale(1.1); 
 }
+
 .gallery_slider .item {
     border: none !important;
     outline: none !important;
@@ -391,6 +393,7 @@ a.phone {
     -moz-transition: all .5s ease;
     transition: all .5s ease
 }
+
 .gallery_slider .item:before {
     content: "";
     position: absolute;
